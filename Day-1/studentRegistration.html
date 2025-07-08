@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vnr Vjiet - Student Registration portal</title>
+    <link rel="stylesheet" href="/Day-2/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="https://vnrvjietexams.net/images/vnrvjiet.png" alt="logo" id="CollegeBanner" />
+        <h2>Welcome to Vnr Vjiet Student Registration Portal</h2>
+    </header>
+    <!--  Description and Instructions -->
+    <section class="instructions">
+        <p>
+            Thank you for choosing <strong>Vnr Vjiet College</strong> for your
+            higher education. This portal allows you to register as a new student
+            for the upcoming academic year.
+        </p>
+        <p>
+            Please fill out the registration form below carefully. Fields marked
+            with <em>asterisks (*)</em> are mandatory.
+        </p>
+        <p>
+            For more details about our programs, visit our
+            <a href="https://vnrvjiet.ac.in/" target="_blank" rel="noopener noreferrer">official college website</a>.
+        </p>
+    </section>
+    <!-- B.Tech Courses Table -->
+    <table border="1" style="border-collapse:collapse">
+        <caption>B.Tech Courses and Professors</caption>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Professor Name</th>
+                <th>Intake</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computer Science and Engineering</td>
+                <td><a href="#">Dr. Ramesh Kumar</a></td>
+                <td>240</td>
+            </tr>
+            <tr>
+                <td>Electronics and Communication Engineering</td>
+                <td><a href="#">Prof. S. Anitha</a></td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Mechanical Engineering</td>
+                <td><a href="#">Dr. P. Srinivas</a></td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Electrical and Electronics Engineering</td>
+                <td><a href="#">Prof. M. Jyothi</a></td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Information Technology</td>
+                <td><a href="#">Dr. A. Venkatesh</a></td>
+                <td>180</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <!-- Student Registration Form -->
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <div id="form">
+            <h4>Enter Student Details</h4>
+
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required />
+            <br />
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            <br />
+
+            <label for="dob">Date of Birth :</label>
+            <input type="date" name="dateOfBirth" id="dob" required />
+            <br />
+
+            <label for="Eamcet">Eamcet Rank :</label>
+            <input type="text" name="EamcetRank" id="Eamcet" placeholder="Enter your Eamcet Rank" required />
+            <br />
+
+            <label for="registrationNumber">Registration Number :</label>
+            <input type="text" name="registrationNumber" id="registrationNumber" placeholder="Enter registration Number"
+                required />
+            <br />
+
+            <label for="phoneNumber">Phone Number :</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Enter phone number" />
+            <br />
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your Address" />
+            <br />
+
+            <label for="photo">Upload Passport Size (JPEG/PNG):</label>
+            <input type="file" name="photo" id="photo" accept="image/jpeg, image/png" required />
+            <br />
+
+            Gender :<br />
+            <label>
+                <input type="radio" name="gender" id="female" value="Female" required /> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" id="male" value="Male" /> Male
+            </label>
+            <br />
+
+            <!-- Branch Selection -->
+            <label for="branch">Branch :</label><br />
+            <select name="branch" id="branch" required>
+                <option value="" disabled selected>Select your branch</option>
+                <option value="cse">Computer Science and Engineering (CSE)</option>
+                <option value="ece">Electronics and Communication Engineering (ECE)</option>
+                <option value="mech">Mechanical Engineering (MECH)</option>
+                <option value="civil">Civil Engineering (CIVIL)</option>
+                <option value="automobile">Automobile Engineering (AUTOMOBILE)</option>
+            </select>
+            <br /><br />
+
+            <!-- Additional Information -->
+            <label for="comments">Comments or Special Requirements</label><br />
+            <textarea id="comments" name="comments" rows="4" cols="50"
+                placeholder="Please let us know if you have any special needs or requests."></textarea>
+            <br /><br />
+
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <footer>
+        <div style="background-color: rgb(74, 16, 16);" id="footerleft">
+            <img src="https://vnrvjiet.ac.in/assets/images/Footer-Logo.png" alt="logo" id="collegeFooterImg">
+            <br>
+            <strong style="color:yellow;">Address:</strong>
+            <p>Vignana Jyothi Nagar, Pragathi Nagar, Nizampet (S.O), Hyderabad, Telangana, India - 500 090 </p>
+            <a href="https://www.google.com/maps/dir//Vignana+Jyothi+Nagar,Pragathi+Nagar,+Nizampet(S.O,+Hyderabad,+Telangana+500090/@17.5387423,78.3030008,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bcb8e0ab28e0975:0x7b048b2858fdee94!2m2!1d78.3854026!2d17.5387593?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank" id="direction-button"></a>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
