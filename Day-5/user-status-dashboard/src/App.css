@@ -1,0 +1,9 @@
+#mainHeading {
+  text-align: center;
+  background-color: #61dafb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+  

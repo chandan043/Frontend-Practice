@@ -1,0 +1,42 @@
+.toggle-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  background-color: #8d6bb9;
+}
+
+.toggle-button {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.sidebar {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
